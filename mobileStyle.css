@@ -1,0 +1,32 @@
+div.content {
+   padding: 0px 5px 0px 5px;
+   margin: 1%;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   background-color: rgb(249, 245, 242);
+
+}
+
+header label {
+   font-size: 1.8em;
+}
+
+.imgGrid {
+   display: grid;
+   grid-template-columns: auto auto;
+   padding: 10px;
+   background-color: inherit;
+}
+
+.imgGrid>div {
+   padding: 0px 20px 0px 20px;
+}
+
+.imgGrid>div.middle {
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+p {
+   margin: 16px 30px 16px 30px;
+}
