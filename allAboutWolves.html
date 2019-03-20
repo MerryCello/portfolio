@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang = "en">
    <head>
       <title>allAboutWolves.org</title>
       <meta name="viewport" content="width= device-width, initial-scale=1">
-      <link type="image/x-icon" href="../publicPics/wolfTabIcon.jpg" rel="shortcut icon">
+      <link type="image/x-icon" href="media/wolfTabIcon.jpg" rel="shortcut icon">
       <link rel="stylesheet" media="screen and (min-width: 767px)" type="text/css" href="desktopStyle.css"/>
       <link rel="stylesheet" media="screen and (max-width: 767px)" type="text/css" href="mobileStyle.css"/>
       <style>
@@ -13,7 +14,7 @@
             font-family: "New Times Romans";
          }
 
-         img {
+         img.frame {
             max-width: 100%;
             height: auto;
             background-color: white;
@@ -25,12 +26,12 @@
             margin: 0px;
             padding: 5px;
             top: 0;
-            background-color: rgb(0,165,0);/*green*/
+            background-color: rgb(175,214,183);/*green*/
          }
 
          footer {
             padding: 5px;
-            background-color: rgb(0,165,0);/*green*/
+            background-color: rgb(175,214,183);/*green*/
          }
          footer>div.grid {
             display: grid;
@@ -48,42 +49,51 @@
             font-size: 0.8em;
          }
 
-         img.alignRight {
+         img#alignRight {
             float: right;
             margin: 0em 0em 2em 1.5em;
             max-width: 33%;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
          }
 
-         img.alignLeft {
+         img#alignLeft {
             float: left;
             margin-right: 1.5em;
             max-width: 33%;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
          }
          p>label {
             font-style: italic;
             font-size: 1.0em;
+         }
+         h1 {
+            letter-spacing: -0.035em;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
          }
       </style>
    </head>
    <body>
       <div class="content">
          <header>
-            <img src="../publicPics/wolfTabIcon.jpg" style="border: 1px solid black;" width="90em" height="90em" alt="Page Icon">
+            <img src="media/wolfTabIcon.jpg" width="90em" height="90em" alt="Page Icon of a howling wolf.">
             <label>All About Wolves</label>
          </header>
 
-         <h2 style="margin: 20px 0px 10px 40px;">Wolf Behavior</h2>
          <div class="imgGrid">
-            <div><img src="../publicPics/wolf1.jpg" width="" height="" alt="Picture of a wolf looking right"></div>
-            <div><img id="img2" src="../publicPics/wolf2.jpg" width="" height="" alt="Picture of a wolf looking center"></div>
-            <div class="middle"><img id="img3" src="../publicPics/wolf3.jpg" width="" height="" alt="Picture of a wolf looking left"></div>
+            <div><img class="frame" src="media/wolf1.jpg" width="" height="" alt="Picture of a wolf looking right"></div>
+            <div><img class="frame" id="img2" src="media/wolf2.jpg" width="" height="" alt="Picture of a wolf looking center"></div>
+            <div class="middle"><img class="frame" id="img3" src="media/wolf3.jpg" width="" height="" alt="Picture of a wolf looking left"></div>
          </div>
          <p><label>Chorus of wolves</label><br/>
          <audio controls>
-            <source src="../publicPics/wolfChorus.mp3" type="audio/MP3"  alt="Audio of a Chorus of Wolves">
-         </audio>
-         <br/>
-         Wolves are highly social animals that live in packs. A pack is an 
+            <source src="media/wolfChorus.mp3" type="audio/MP3"  alt="Audio of a Chorus of Wolves">
+         </audio></p>
+         <h1 style="margin: 20px 0px 10px 40px;">Wolf Behavior</h1>
+         <p>Wolves are highly social animals that live in packs. A pack is an 
          extended family group comprised of a the breeding, or “alpha” male 
          and female pair and some of their  subordinate offspring and current 
          pups from one or more years. The alpha wolves decide when the pack will 
@@ -99,9 +109,9 @@
          
          <p><label>Lonesome wolf</label><br/>
          <audio controls>
-            <source src="../publicPics/wolfLonesome.mp3" type="audio/MP3" alt="Audio of the howl of a lonesome wolf">
+            <source src="media/wolfLonesome.mp3" type="audio/MP3" alt="Audio of the howl of a lonesome wolf">
          </audio>
-         <a target="_blank" href="../publicPics/wolfHowling.jpg"><img class="alignLeft" src="../publicPics/wolfHowling.jpg" height="" alt="Picture of a wolf howling"></a>
+         <a target="_blank" href="media/wolfHowling.jpg"><img class="frame" id="alignLeft" src="media/wolfHowling.jpg" height="" alt="Picture of a wolf howling"></a>
          Although all the functions of howling are not known, scientists 
          believe that wolves may howl to assemble their pack, to claim territory, 
          to warn intruders away from a home site or kill, or to identify other 
@@ -125,11 +135,11 @@
          <div style="margin: 0px 30px 0px 30px; text-align: right">
             <br/><label style="font-style: italic; text-aling: right;">Wolf cub howling</label><br/>
             <audio controls>
-               <source src="../publicPics/wolfPup.mp3" type="audio/MP3" alt="Audio of a Cub wolf Howling">
+               <source src="media/wolfPup.mp3" type="audio/MP3" alt="Audio of a Cub wolf Howling">
             </audio>
          </div>
          <p>
-         <a target="_blank" href="../publicPics/wolfCub.jpg"><img class="alignRight" src="../publicPics/wolfCub.jpg" alt="Picture of a Cub Wolf"></a>
+         <a target="_blank" href="media/wolfCub.jpg"><img  class="frame" id="alignRight" src="media/wolfCub.jpg" alt="Picture of a Cub Wolf"></a>
          Few wolves live more than 5 years in the wild, but with ideal 
          conditions can reach 15 years of age. Wolf populations are naturally 
          regulated by prey density and territorial disputes among wolves. In many 
@@ -139,10 +149,10 @@
          in Idaho, it is expected that pack sizes will be similar to those found 
          in the Northern Rockies, which average 5 to 10 animals. In areas with 
          abundant prey, packs can have 20 or more members.</p>
-         <p><img src="../publicPics/wolvesHunting.jpg" width="" height="" alt="Picture of a pack of wolves hunting">
+         <p><img class="frame" src="media/wolvesHunting.jpg" width="" height="" alt="Picture of a pack of wolves hunting">
          <label>Confronting wolf</label><br/>
          <audio controls>
-            <source src="../publicPics/wolfConfront.mp3" type="audio/MP3"  alt="Audio of wolves confronting">
+            <source src="media/wolfConfront.mp3" type="audio/MP3"  alt="Audio of wolves confronting">
          </audio><br/>
          Large predators like wolves and cougar play an important role in 
          maintaining the health of natural ecosystems. Wolves prey primarily on 
@@ -167,9 +177,9 @@
          <footer>
             <div class="grid">
                <div style="text-align: right;">Contact:</div>
-               <div><p>360-344-2008</p><br/><p>allaboutwolves@wildlife.net</p><br/><p>Western WildLife Outreach <br/>P.O. Box 147 <br/>Port Townsend, WA 98368</p></div>
+               <div><p>360-344-2008</p><p>allaboutwolves@wildlife.net</p><p style="line-height: 1;">Western WildLife Outreach <br/>P.O. Box 147 <br/>Port Townsend, WA 98368</p></div>
             </div>
-            <h6 style="text-align: center; margin: 0px 0px 10px 0px;">Copyright 2019 <a target="_blank" href="http://westernwildlife.org/gray-wolf-outreach-project/biology-behavior-4/">All About Wolves&copy;</a> All Rights Reserved</h6>
+            <h6 style="text-align: center; margin: 0px 0px 10px 0px;">Copyright 2019 <a target="_blank" href="http://westernwildlife.org/gray-wolf-outreach-project/biology-behavior-4/">All About Wolves</a>&copy; All Rights Reserved</h6>
          </footer>
       </div>
       <script>
@@ -177,16 +187,16 @@
          {
             if(x.matches)
             {
-               document.getElementById("img2").src = "../publicPics/wolf3.jpg";
+               document.getElementById("img2").src = "media/wolf3.jpg";
                var middle = document.getElementById("img3");
-               middle.src = "../publicPics/wolf2.jpg";
+               middle.src = "media/wolf2.jpg";
                middle.style = "display: block; width: 50%; margin-left: auto; margin-right: auto;";
             }
             else
             {
                var side = document.getElementById("img3");
-               document.getElementById("img2").src = "../publicPics/wolf2.jpg";
-               side.src = "../publicPics/wolf3.jpg";
+               document.getElementById("img2").src = "media/wolf2.jpg";
+               side.src = "media/wolf3.jpg";
                side.style = "display: block; width: 100%; margin-left: auto; margin-right: auto;";
             }
          }
@@ -198,3 +208,4 @@
       </script>
    </body>
 </html>
+

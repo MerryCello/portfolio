@@ -23,4 +23,9 @@ header label {
 
 p {
    margin: 16px 30px 16px 30px;
+   line-height: 1.8;
+   font-size: 22px;
+   font-family: "Ubuntu", sans-serif;
+   font-weight: 300;
 }
+
