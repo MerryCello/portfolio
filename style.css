@@ -233,3 +233,44 @@ button:active {
     display: none;
   }
 }
+
+.bg-highlight {
+  background-color: #ebe8dd !important;
+}
+
+.bg-inherit {
+    background-color: inherit !important;
+}
+
+a.link {
+    color: #1874cd;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a.link:hover {
+  color: #a1c7ff;
+  text-decoration: underline;
+}
+
+a.link:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.link:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.link:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+a.inherit {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
