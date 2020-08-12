@@ -32,7 +32,16 @@ h6,
   font-weight: 700;
 }
 
+.nav-mobile-name {
+  margin: 0;
+  position: absolute;
+  top: 0pt;
+  left: 16pt;
+  display: none;
+}
+
 h1,
+.nav-mobile-name,
 .mobile-name {
   font-family: "Just Another Hand", cursive;
   font-size: 7.5rem;
@@ -40,6 +49,7 @@ h1,
 }
 
 h1,
+.nav-mobile-name,
 .mobile-name,
 .edu-icons {
   color: #696969;
@@ -137,6 +147,7 @@ button:active {
     border-radius: 100%;
   }
 
+  .nav-mobile-name,
   .mobile-name {
     font-size: 3rem;
   }
@@ -163,6 +174,7 @@ button:active {
   align-items: center;
 }
 
+.nav-mobile-name,
 .mobile-name {
   font-size: 3rem;
 }
@@ -228,6 +240,7 @@ button:active {
     border-top: none;
   }
 
+  .nav-mobile-name,
   .mobile-name,
   .mobile-profession {
     display: none;
