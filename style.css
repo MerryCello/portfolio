@@ -92,10 +92,6 @@ a {
   border-top: 0.1rem groove #696969;
 }
 
-#mail-address a {
-  color: #242424;
-}
-
 .fa-ul {
   margin-left: 0rem;
 }
@@ -134,8 +130,13 @@ button:active {
 }
 
 @media (min-width: 320px) and (max-width: 992px) {
+  #mobile-dk-mode-toggle {
+    display: block;
+  }
+
   h1,
-  h4 {
+  h4,
+  #desktop-dk-mode-toggle {
     font-size: 5rem;
     display: none;
   }
@@ -286,4 +287,117 @@ a.inherit {
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+}
+
+/***************************************************************
+ * Dark Mode
+ ***************************************************************/
+ /* Mobile slider */
+ @media (max-width: 992px) {
+  /* TODO: add attr */
+  #mobile-dk-mode-toggle {
+    display: block;
+  }
+
+  #desktop-dk-mode-toggle {
+    display: none;
+  }
+}
+
+/* Desktop slider */
+@media (min-width: 993px) {
+  #mobile-dk-mode-toggle {
+    display: none;
+  }
+
+  /* TODO: add attr */
+  #desktop-dk-mode-toggle {
+    display: block;
+  }
+}
+
+/* Desktop/Mobile slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+ .dark-bg-highlight {
+  color: rgb(204, 201, 194);
+  background-color: rgb(72, 75, 78);
+}
+
+.dark-form {
+  border-color: rgb(54, 59, 61);
+}
+
+.progress-bar-dark {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 60, 80),
+    rgb(11, 73, 104),
+    rgb(18, 86, 127),
+    rgb(26, 95, 149),
+    rgb(17, 84, 148)
+  );
+}
+
+.dark-bg,
+.dark-form {
+  color: rgb(188, 185, 179);
+  background-color: rgb(43, 45, 48);
+}
+
+.dark-bg,
+.dark-form,
+.dark-bg-highlight,
+.progress-bar-dark {
+  transition: 0.5s;
 }
