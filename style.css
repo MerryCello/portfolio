@@ -390,7 +390,8 @@ input:checked + .slider:before {
 }
 
 .dark-bg,
-.dark-form {
+.dark-form,
+.dark-form:focus {
   color: rgb(188, 185, 179);
   background-color: rgb(43, 45, 48);
 }
