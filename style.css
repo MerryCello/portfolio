@@ -402,3 +402,7 @@ input:checked + .slider:before {
 .progress-bar-dark {
   transition: 0.5s;
 }
+
+.hidden {
+  display: none;
+}
